@@ -26,7 +26,7 @@ $(function() {
 			$(formMessages).addClass('alert alert-success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text('Thanks for letting us know. See you soon!');
 
 			// Clear the form.
 			$('#cname').val('');
@@ -43,11 +43,7 @@ $(function() {
 			$(formMessages).addClass('alert alert-danger');
 
 			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
+			$(formMessages).text('Oops! An error occured and your message could not be sent. Would you mind trying again?');
 		});
 
 	});
