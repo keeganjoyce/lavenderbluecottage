@@ -372,11 +372,12 @@ label {
 /* ======= Hero Section ======= */
 .hero-section {
   margin-top: 55px;
-  background: #262220 url('../images/hero-bg.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
+  background: #262220 url('../hero.jpg')  no-repeat 50% top;
+  background-size: 450px;
+  -webkit-background-size: contain;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: contain;
   height: 760px;
   position: relative;
 }
@@ -400,12 +401,13 @@ label {
   z-index: 20;
 }
 .hero-box {
-  background: rgba(0, 0, 0, 0.6);
-  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0); 
+  color: rgba(255, 255, 255, 0);
   padding: 30px;
   padding-top: 90px;
   padding-bottom: 60px;
   height: 760px;
+  position: center;
 }
 .hero-box .date {
   font-size: 28px;
